@@ -19,9 +19,9 @@ contract MyToken {
     }
 
     // Mint function
-    function mint(address recipient, uint value) external {
+    function mint(address sender, uint value) external {
         totalSupply += value;
-        addressBalances[recipient] += value;
+        addressBalances[sender] += value;
     }
 
     // Burn function
