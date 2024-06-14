@@ -15,7 +15,6 @@ contract MyToken {
         name = _name;
         abbreviation = _abbreviation;
         totalSupply = _initialSupply;
-        addressBalances[msg.sender] = _initialSupply;
     }
 
     // Mint function
